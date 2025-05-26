@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 
 function Navbar() {
   return (
     <div className="Navbar">
       <h1>Bike Store</h1>
       <Link to="/">
-        <button>Home</button>
+        <Button variant="secondary">Home</Button>
       </Link>
-        <button>Menu</button>
+        <Button variant="secondary">Menu</Button>
     </div>
   );
 }

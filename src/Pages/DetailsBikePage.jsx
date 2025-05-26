@@ -47,7 +47,13 @@ function DetailsBikePage() {
       <h2>{details.frame_material}</h2>
       <h2>{details.color}</h2>
       <h2>{details.weight_kg}</h2>
+      <hr />
       <h2>{details.company?.name}</h2>
+      <h2>{details.company?.country}</h2>
+      <h2>{details.company?.founted}</h2>
+      <h2>{details.company?.website}</h2>
+      <img src={details.company?.image} alt="logoCompany" style={{width: "100px", height: "auto"}} />
+
       <Link to={`/formModifyPage/${params.bikeId}`}>
         <button>Update</button>
       </Link>

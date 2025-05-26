@@ -5,14 +5,14 @@ import { useNavigate } from "react-router-dom";
 
 function FormCreateBikePage() {
 
-    const navigate = useNavigate()
-    const [name, setName] = useState()
-    const [discipline, setDiscipline] = useState()
-    const [frame_material, setFrame_material] = useState()
-    const [color, setColor] = useState()
-    const [weight_kg, setWeight_kg] = useState() 
-    const [image, setImage] = useState()
-    const [companyId, setCompanyId] = useState()
+    const navigate = useNavigate("")
+    const [name, setName] = useState("")
+    const [discipline, setDiscipline] = useState("")
+    const [frame_material, setFrame_material] = useState("")
+    const [color, setColor] = useState("")
+    const [weight_kg, setWeight_kg] = useState("") 
+    const [image, setImage] = useState("")
+    const [companyId, setCompanyId] = useState("")
 
     const handleSubmit = (e) => {
       e.preventDefault()

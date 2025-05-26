@@ -1,11 +1,25 @@
 import { useEffect, useState } from "react";
 import CardBikes from "../Components/CardBikes";
 import axios from "axios"
+import { useSearchParams } from "react-router-dom";
 
 
 function HomePage() {
 
-    const [allBike, setAllBike] = useState(null)
+    const [allBike, setAllBike] = useState([])
+
+    const [searchParams, setSearchParams] = useSearchParams()
+    const discipline = searchParams.get("discipline")
+
+    const handleFilterBike = (event) => {
+      if (event.target.value === "") {
+        setSearchParams({})
+      }else {
+        setSearchParams({"discipline": event.target.value})
+      }
+      
+    }
+
 
     useEffect(() => {
     
@@ -25,14 +39,25 @@ function HomePage() {
   return (
     <div className="HomePage">
 
-      <select name="" id="">
+      <select onChange={handleFilterBike} name="" id="">
         <option value="">All Bike</option>
-        <option value="">Discipline</option>
-        <option value="">Company</option>
-        <option value="">Frame Material</option>
+        <option value="MTB">MTB</option>
+        <option value="Road">Road</option>
+        <option value="Urban">Urban</option>
+        <option value="Gravel">Gravel</option>
+        <option value="Electric">Electric</option>
       </select>
 
-      {allBike.map((eachBike) => {
+      {allBike
+      .filter((eachBikeDis) => {
+        if (discipline === null) {
+          return true
+        }else {
+           return eachBikeDis.discipline === discipline
+        }
+     
+    })
+      .map((eachBike) => {
         return (<CardBikes key={eachBike.id} eachBike={eachBike} />)
       })}
     </div>

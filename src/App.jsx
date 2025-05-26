@@ -9,6 +9,7 @@ import CompanyDetailsPage from "./Pages/CompanyDetailsPage"
 import FormCreateBikePage from "./Pages/FormCreateBikePage"
 import DetailsBikePage from "./Pages/DetailsBikePage"
 import FormModifyPage from "./Pages/FormModifyPage"
+import ErrorPage from "./Pages/ErrorPage"
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
       <Route path="/formCreateBikePage" element={<FormCreateBikePage />} /> 
       <Route path="/details/:bikeId" element={<DetailsBikePage />} />
       <Route path="formModifyPage/:bikeId" element={<FormModifyPage />} />  
+      <Route path="*" element={<ErrorPage />}/>
      </Routes>
      <Footer />
     </>

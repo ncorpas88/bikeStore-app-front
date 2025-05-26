@@ -12,6 +12,7 @@ function FormCreateBikePage() {
     const [color, setColor] = useState()
     const [weight_kg, setWeight_kg] = useState() 
     const [image, setImage] = useState()
+    const [companyId, setCompanyId] = useState()
 
     const handleSumit = (e) => {
       e.preventDefault()
@@ -23,6 +24,8 @@ function FormCreateBikePage() {
         color: color,
         weight_kg: weight_kg,
         image: image,
+        companyId: companyId,
+        
       }
 
       axios.post(`${import.meta.env.VITE_SERVER_URL}/bikes`, newBike)
@@ -90,6 +93,15 @@ function FormCreateBikePage() {
         image="image url"
         value={image}
         onChange={(e) => setImage(e.target.value)} 
+        />
+
+        <br />
+        <label>CompanyId:</label>
+        <input 
+        type="text"
+        name="companyId"
+        value={companyId}
+        onChange={(e) => setCompanyId(e.target.value)} 
         />
         <hr />
         <button type="submit">Submit</button>

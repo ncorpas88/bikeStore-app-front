@@ -24,7 +24,7 @@ function CompanyDetailsPage() {
       <h1>Companies</h1>
       {allCompanies.map((eachCompany) => {
         return (
-          <div>
+          <div key={eachCompany.id}>
             <h2>{eachCompany.name}</h2>
             <img src={eachCompany.image} alt={eachCompany.image} width={200}/>
             <h3>{eachCompany.country}</h3>

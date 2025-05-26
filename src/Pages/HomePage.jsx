@@ -24,6 +24,14 @@ function HomePage() {
 
   return (
     <div className="HomePage">
+
+      <select name="" id="">
+        <option value="">All Bike</option>
+        <option value="">Discipline</option>
+        <option value="">Company</option>
+        <option value="">Frame Material</option>
+      </select>
+
       {allBike.map((eachBike) => {
         return (<CardBikes key={eachBike.id} eachBike={eachBike} />)
       })}

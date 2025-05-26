@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 
 function DetailsBikePage() {
@@ -48,7 +48,9 @@ function DetailsBikePage() {
       <h2>{details.color}</h2>
       <h2>{details.weight_kg}</h2>
       <h2>{details.company?.name}</h2>
-      <button>Update</button>
+      <Link to={`/formModifyPage/${params.bikeId}`}>
+        <button>Update</button>
+      </Link>
       <button onClick={deleteBike}>Delete</button>
     </div>
   );

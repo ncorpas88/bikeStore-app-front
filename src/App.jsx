@@ -8,6 +8,7 @@ import Footer from "./Components/Footer"
 import CompanyDetailsPage from "./Pages/CompanyDetailsPage"
 import FormCreateBikePage from "./Pages/FormCreateBikePage"
 import DetailsBikePage from "./Pages/DetailsBikePage"
+import FormModifyPage from "./Pages/FormModifyPage"
 
 function App() {
   
@@ -21,7 +22,8 @@ function App() {
       <Route path="/companyDetailsPage" element={<CompanyDetailsPage />} />
       <Route path="/aboutPage" element={<AboutPage />} />
       <Route path="/formCreateBikePage" element={<FormCreateBikePage />} /> 
-      <Route path="/details/:bikeId" element={<DetailsBikePage />} />  
+      <Route path="/details/:bikeId" element={<DetailsBikePage />} />
+      <Route path="formModifyPage/:bikeId" element={<FormModifyPage />} />  
      </Routes>
      <Footer />
     </>

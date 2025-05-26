@@ -14,7 +14,7 @@ function FormCreateBikePage() {
     const [image, setImage] = useState()
     const [companyId, setCompanyId] = useState()
 
-    const handleSumit = (e) => {
+    const handleSubmit = (e) => {
       e.preventDefault()
 
       const newBike = {
@@ -41,7 +41,7 @@ function FormCreateBikePage() {
     <div className="CreateBike">
       <h2>Add Bike</h2>
 
-      <form onSubmit={handleSumit}>
+      <form onSubmit={handleSubmit}>
         <label>Name:</label>
         <input 
         type="text"
@@ -54,7 +54,7 @@ function FormCreateBikePage() {
         <label>Discipline:</label>
         <input 
         type="text"
-        discipline="discipline"
+        name="discipline"
         value={discipline}
         onChange={(e) => setDiscipline(e.target.value)} 
         />
@@ -63,7 +63,7 @@ function FormCreateBikePage() {
         <label>Frame Material:</label>
         <input 
         type="text"
-        frame_material="frame-material"
+        name="frame-material"
         value={frame_material}
         onChange={(e) => setFrame_material(e.target.value)} 
         />
@@ -72,7 +72,7 @@ function FormCreateBikePage() {
         <label>Color:</label>
         <input 
         type="text"
-        color="color"
+        name="color"
         value={color}
         onChange={(e) => setColor(e.target.value)} 
         />
@@ -81,7 +81,7 @@ function FormCreateBikePage() {
         <label>Weight kg:</label>
         <input 
         type="text"
-        weight_kg="weight_kg"
+        name="weight_kg"
         value={weight_kg}
         onChange={(e) => setWeight_kg(e.target.value)} 
         />
@@ -90,7 +90,7 @@ function FormCreateBikePage() {
         <label>Image URL:</label>
         <input 
         type="text"
-        image="image url"
+        name="image url"
         value={image}
         onChange={(e) => setImage(e.target.value)} 
         />

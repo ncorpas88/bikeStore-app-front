@@ -5,7 +5,7 @@
   min-height: 100vh;
   margin: 0 auto;
   text-align: center;
-  background-color: rgb(122, 144, 148);
+  background-color: rgb(171, 190, 190);
   
 }
 
@@ -22,7 +22,7 @@
 }
 
 .Navbar span {
-  color: rgb(204, 9, 9);
+  color: rgb(66, 133, 127);
 }
 
 .Navbar h1 {
@@ -33,6 +33,7 @@
 }
 
 .Navbar button {
+  background-color:  rgb(66, 133, 127);
   display: flex;
   justify-content: center;
   padding: 10px 20px;
@@ -46,7 +47,7 @@
 }
 
 .Sidebar {
-  background-color: rgb(161, 161, 161);
+  background-color: rgb(66, 133, 127);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,8 +86,13 @@
 }
 
 .About {
-  background-color: rgb(196, 178, 151);
+  background-color: rgb(151, 195, 196);
   padding: 60px;
+}
+
+.About img {
+  margin-top: 20px;
+  border-radius: 20px;
 }
 
 .CompaniesDetailsPage {
@@ -114,4 +120,15 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 5rem;
+}
+
+.CreateBike button{
+  margin-bottom: 20px;
+  background-color: rgb(2, 143, 60);
+  border-color: black;
+  color: black;
+}
+
+.CardBikes {
+  border-radius: 20px;
 }

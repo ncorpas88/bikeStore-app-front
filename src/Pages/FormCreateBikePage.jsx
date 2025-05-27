@@ -41,7 +41,7 @@ function FormCreateBikePage() {
     <div className="CreateBike">
       <h2>Add Bike</h2>
 
-      <Form onSubmit={handleSubmit}>
+      <Form className="mx-5 p-2" onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label>Name:</Form.Label>
           <Form.Control
@@ -115,7 +115,7 @@ function FormCreateBikePage() {
           </Form.Text>
         </Form.Group>
 
-        <Button type="submit">Submit</Button>
+        <Button variant="success" type="submit">Submit</Button>
       </Form>
     </div>
   );

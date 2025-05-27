@@ -11,6 +11,7 @@ function AboutPage() {
       <Link to="www.linkedin.com/in/ncorpas" >
         <img src="src/images/logolink.png" alt="logo-linkedin" width={200}/>
       </Link>
+      <img src="src/images/map.png" alt="map" width={600}/>
     </div>
   );
 }

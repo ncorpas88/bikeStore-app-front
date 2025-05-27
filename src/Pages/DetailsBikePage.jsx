@@ -2,13 +2,18 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Button from "react-bootstrap/Button";
+import Modal from 'react-bootstrap/Modal';
 
 function DetailsBikePage() {
+  
   const params = useParams();
-
   const [details, setDetails] = useState(null);
-
   const navigate = useNavigate();
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  
 
   useEffect(() => {
     getData();
@@ -55,9 +60,9 @@ function DetailsBikePage() {
       </div>
       <hr />
       <div className="companydetails">
-        <h2>Company :{details.company?.name}</h2>
+        <h2>Company: {details.company?.name}</h2>
         <h2>{details.company?.country}</h2>
-        <h2>{details.company?.founted}</h2>
+        <h2>Since: {details.company?.founded}</h2>
         <h2>Web Site: {details.company?.website}</h2>
         <img
           src={details.company?.image}
@@ -69,9 +74,26 @@ function DetailsBikePage() {
       <Link to={`/formModifyPage/${params.bikeId}`}>
         <Button variant="success">Update</Button>
       </Link>
-      <Button variant="danger" onClick={deleteBike}>
+
+      <Button variant="danger" onClick={handleShow}>
         Delete
       </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>"Warning"</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>"Are you sure you want to delete?"</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={deleteBike}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
     </div>
   );
 }

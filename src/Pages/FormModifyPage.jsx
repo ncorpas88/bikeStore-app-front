@@ -48,7 +48,7 @@ function FormModifyPage() {
     <div>
       <h1>Modify Bike</h1>
 
-      <Form onSubmit={handleSubmit}>
+      <Form className="mx-5 p-2" onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label>Name:</Form.Label>
           <Form.Control
@@ -122,7 +122,7 @@ function FormModifyPage() {
           </Form.Text>
         </Form.Group>
 
-        <Button type="submit">Update</Button>
+        <Button variant="success" type="submit">Update</Button>
       </Form>
     </div>
   );

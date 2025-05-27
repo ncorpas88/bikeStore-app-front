@@ -21,7 +21,6 @@ function CompanyDetailsPage() {
 
   return (
     <div className="CompaniesDetailsPage">
-      <h1>Companies</h1>
       {allCompanies.map((eachCompany) => {
         return (
           <div key={eachCompany.id}>

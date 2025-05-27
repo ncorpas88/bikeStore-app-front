@@ -40,7 +40,7 @@ function HomePage() {
   return (
     <div className="HomePage">
 
-      <Form.Select onChange={handleFilterBike} name="" id="">
+      <Form.Select size="lg" onChange={handleFilterBike} name="" id="">
         <option value="">All Bike</option>
         <option value="MTB">MTB</option>
         <option value="Road">Road</option>

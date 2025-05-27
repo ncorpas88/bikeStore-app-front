@@ -4,7 +4,8 @@ import Button from 'react-bootstrap/Button';
 function Navbar() {
   return (
     <div className="Navbar">
-      <h1>Bike Store</h1>
+      <img src="src/images/logobikestore.png" alt="logistores" />
+      <h1>Your Trusted Bike Shop</h1>
       <Link to="/">
         <Button variant="secondary">Home</Button>
       </Link>

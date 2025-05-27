@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  background-color: rgb(101, 103, 126);
 }
 
 .Navbar {
@@ -20,7 +21,7 @@
   flex-grow: 1;
   text-align: center;
   margin: 0;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .Navbar button {
@@ -32,16 +33,20 @@
 
 }
 
+.Navbar img {
+  width: 120px;
+}
+
 .Sidebar {
   background-color: rgb(161, 161, 161);
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 60px;
-  padding-top: 10px;
+  flex-wrap: wrap;
+  gap: 8rem;
+  padding-top: 2cqb;
   margin-bottom: 20px;
-  padding-bottom: 10px;
+  
 }
 
 .Sidebar img {
@@ -77,8 +82,18 @@
 
 }
 
+.CompaniesDetailsPage {
+  background-color: rgb(101, 103, 126);
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
 .DetailsBike img{
   border-radius: 20px;
   width: 300px;
   height: 200px;
 }
+

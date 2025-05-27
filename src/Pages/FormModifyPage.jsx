@@ -59,7 +59,6 @@ function FormModifyPage() {
           />
         </Form.Group>
 
-        
         <Form.Group className="mb-3">
           <Form.Label>Discipline:</Form.Label>
           <Form.Control
@@ -70,7 +69,6 @@ function FormModifyPage() {
           />
         </Form.Group>
 
-        
         <Form.Group className="mb-3">
           <Form.Label>Frame Material:</Form.Label>
           <Form.Control
@@ -81,7 +79,6 @@ function FormModifyPage() {
           />
         </Form.Group>
 
-        
         <Form.Group className="mb-3">
           <Form.Label>Color:</Form.Label>
           <Form.Control
@@ -92,7 +89,6 @@ function FormModifyPage() {
           />
         </Form.Group>
 
-        
         <Form.Group className="mb-3">
           <Form.Label>Weight kg:</Form.Label>
           <Form.Control
@@ -103,7 +99,6 @@ function FormModifyPage() {
           />
         </Form.Group>
 
-        
         <Form.Group className="mb-3">
           <Form.Label>Image URL:</Form.Label>
           <Form.Control
@@ -114,7 +109,6 @@ function FormModifyPage() {
           />
         </Form.Group>
 
-        
         <Form.Group className="mb-3">
           <Form.Label>CompanyId:</Form.Label>
           <Form.Control
@@ -123,6 +117,9 @@ function FormModifyPage() {
             value={companyId}
             onChange={(e) => setCompanyId(e.target.value)}
           />
+          <Form.Text className="text-muted">
+            Trek Id: 1234, Orbea Id: 5678, Focus Id: 9101
+          </Form.Text>
         </Form.Group>
 
         <Button type="submit">Update</Button>

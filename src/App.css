@@ -39,11 +39,11 @@
 
 .Sidebar {
   background-color: rgb(161, 161, 161);
-  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 8rem;
+  gap: 10rem;
   padding-top: 2cqb;
   margin-bottom: 20px;
   

@@ -1,7 +1,6 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -25,21 +24,36 @@
 }
 
 .Navbar button {
+  display: flex;
+  justify-content: center;
   padding: 10px 20px;
   margin-left: 10px;
+  margin: 10px;
 
 }
 
 .Sidebar {
-  background-color: rgb(243, 0, 0);
+  background-color: rgb(161, 161, 161);
   position: relative;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.Sidebar img {
+  margin: 10px;
 }
 
 .HomePage {
-  background-color: bisque;
+  background-color: rgb(101, 103, 126);
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .HomePage img {
@@ -52,9 +66,14 @@
   background-color: black;
 }
 
+.Footer button {
+  margin: 10px;
+}
+
 .About {
   background-color: rgb(196, 178, 151);
   padding: 20px;
+  min-width: 100%;
 
 }
 

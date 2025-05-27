@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 
 function Sidebar() {
   return (
     <div className="Sidebar">
-      <h2>Sidebar</h2>
       <Link to="/companyDetailsPage">
-        <button>Companies</button>
+        <Button variant="dark">Companies</Button>
       </Link>
+      <img src="src/images/bikelogo.png" alt="bikelogo" width={100} />
       <Link to="/formCreateBikePage">
-        <button>Create Bike</button>
+        <Button variant="dark">Create Bike</Button>
       </Link>
     </div>
   );

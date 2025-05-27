@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import CardBikes from "../Components/CardBikes";
 import axios from "axios"
 import { useSearchParams } from "react-router-dom";
+import Form from 'react-bootstrap/Form';
 
 
 function HomePage() {
@@ -39,14 +40,14 @@ function HomePage() {
   return (
     <div className="HomePage">
 
-      <select onChange={handleFilterBike} name="" id="">
+      <Form.Select onChange={handleFilterBike} name="" id="">
         <option value="">All Bike</option>
         <option value="MTB">MTB</option>
         <option value="Road">Road</option>
         <option value="Urban">Urban</option>
         <option value="Gravel">Gravel</option>
         <option value="Electric">Electric</option>
-      </select>
+      </Form.Select>
 
       {allBike
       .filter((eachBikeDis) => {

@@ -52,7 +52,7 @@ function FormCreateBikePage() {
           />
         </Form.Group>
 
-        <br />
+        
         <Form.Group className="mb-3">
           <Form.Label>Discipline:</Form.Label>
           <Form.Control
@@ -63,7 +63,7 @@ function FormCreateBikePage() {
           />
         </Form.Group>
 
-        <br />
+        
         <Form.Group className="mb-3">
           <Form.Label>Frame Material:</Form.Label>
           <Form.Control
@@ -74,7 +74,7 @@ function FormCreateBikePage() {
           />
         </Form.Group>
 
-        <br />
+        
         <Form.Group className="mb-3">
           <Form.Label>Color:</Form.Label>
           <Form.Control
@@ -85,7 +85,7 @@ function FormCreateBikePage() {
           />
         </Form.Group>
 
-        <br />
+       
         <Form.Group className="mb-3">
           <Form.Label>Weight kg:</Form.Label>
           <Form.Control
@@ -96,7 +96,7 @@ function FormCreateBikePage() {
           />
         </Form.Group>
 
-        <br />
+        
         <Form.Group className="mb-3">
           <Form.Label>Image URL:</Form.Label>
           <Form.Control
@@ -107,7 +107,7 @@ function FormCreateBikePage() {
           />
         </Form.Group>
 
-        <br />
+      
         <Form.Group className="mb-3">
           <Form.Label>CompanyId:</Form.Label>
           <Form.Control
@@ -118,7 +118,7 @@ function FormCreateBikePage() {
           />
         </Form.Group>
 
-        <hr />
+       
         <Button type="submit">Submit</Button>
       </Form>
     </div>

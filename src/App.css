@@ -1,8 +1,12 @@
 #root {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   text-align: center;
-  background-color: rgb(101, 103, 126);
+  background-color: rgb(122, 124, 148);
+  
 }
 
 .Navbar {
@@ -15,6 +19,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.Navbar span {
+  color: rgb(204, 9, 9);
 }
 
 .Navbar h1 {
@@ -54,11 +62,11 @@
 }
 
 .HomePage {
-  background-color: rgb(101, 103, 126);
   display:flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-bottom: 10px;
 }
 
 .HomePage img {
@@ -69,25 +77,23 @@
 
 .Footer {
   background-color: black;
+  height: 80px
 }
 
 .Footer button {
-  margin: 10px;
+  margin: 20px;
 }
 
 .About {
   background-color: rgb(196, 178, 151);
-  padding: 20px;
-  min-width: 100%;
-
+  padding: 60px;
 }
 
 .CompaniesDetailsPage {
-  background-color: rgb(101, 103, 126);
   display:flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 
@@ -97,3 +103,10 @@
   height: 200px;
 }
 
+
+.companydetails {
+   display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}

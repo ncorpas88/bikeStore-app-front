@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function AboutPage() {
   return (
     <div className="About">
-      <h1>About</h1>
+      <h1>About Me</h1>
       <Link to="https://github.com/ncorpas88/bikeStore-app-front" >
         <img src="images/git.png" alt="logo-github" width={200}/>
       </Link>

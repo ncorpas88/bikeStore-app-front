@@ -8,7 +8,7 @@ import Spinner from 'react-bootstrap/Spinner';
 
 function HomePage() {
 
-    const [allBike, setAllBike] = useState([])
+    const [allBike, setAllBike] = useState(null)
 
     const [searchParams, setSearchParams] = useSearchParams()
     const discipline = searchParams.get("discipline")

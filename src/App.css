@@ -121,6 +121,21 @@
   border-radius: 20px;
 }
 
+.CardCompany {
+  width: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.CardCompany img {
+  border-radius: 20px;
+  height: 250px;
+  object-fit: cover;
+}
 
 @media (max-width: 705px){
   .bg-body-tertiary {

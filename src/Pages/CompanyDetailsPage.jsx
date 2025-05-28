@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Spinner from 'react-bootstrap/Spinner';
-
+import Spinner from "react-bootstrap/Spinner";
+import Card from "react-bootstrap/Card";
 
 function CompanyDetailsPage() {
   const [allCompanies, setAllCompanies] = useState(null);
@@ -25,13 +25,19 @@ function CompanyDetailsPage() {
     <div className="CompaniesDetailsPage">
       {allCompanies.map((eachCompany) => {
         return (
-          <div key={eachCompany.id}>
-            <h2>{eachCompany.name}</h2>
-            <img src={eachCompany.image} alt={eachCompany.image} width={200}/>
-            <h3>{eachCompany.country}</h3>
-            <h3>{eachCompany.founded}</h3>
-            <h4>{eachCompany.website}</h4>
-          </div>
+          <Card className="CardCompany" key={eachCompany.id}>
+            <Card.Img
+              src={eachCompany.image}
+              alt={eachCompany.image}
+              width={200}
+            />
+            <Card.Title>{eachCompany.name}</Card.Title>
+            <Card.Body>
+              <Card.Text>Made in: {eachCompany.country}</Card.Text>
+              <Card.Text>Since: {eachCompany.founded}</Card.Text>
+              <Card.Text>{eachCompany.website}</Card.Text>
+            </Card.Body>
+          </Card>
         );
       })}
     </div>

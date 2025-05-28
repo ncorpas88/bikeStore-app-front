@@ -9,9 +9,9 @@
   
 }
 
-.Navbar {
+.bg-body-tertiary {
   background-color: rgb(0, 0, 0);
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 5px 20px;
   box-shadow: 0px 1px 2px gray;
   width: 100%;
@@ -21,18 +21,18 @@
   align-items: center;
 }
 
-.Navbar span {
+.bg-body-tertiary span {
   color: rgb(66, 133, 127);
 }
 
-.Navbar h1 {
+.bg-body-tertiary h1 {
   flex-grow: 1;
   text-align: center;
   margin: 0;
   font-size: 30px;
 }
 
-.Navbar button {
+.bg-body-tertiary button {
   background-color:  rgb(66, 133, 127);
   display: flex;
   justify-content: center;
@@ -42,7 +42,7 @@
 
 }
 
-.Navbar img {
+.bg-body-tertiary img {
   width: 120px;
 }
 

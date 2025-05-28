@@ -17,7 +17,6 @@ function App() {
   return (
     <>
     <Navbar />
-    <Sidebar />
      <Routes>
       <Route path="/" element={<HomePage/>} />
       <Route path="/companyDetailsPage" element={<CompanyDetailsPage />} />

@@ -12,6 +12,7 @@ function HomePage() {
 
     const [searchParams, setSearchParams] = useSearchParams()
     const discipline = searchParams.get("discipline")
+    const search = searchParams.get("search")
 
     const handleFilterBike = (event) => {
       if (event.target.value === "") {
@@ -32,7 +33,7 @@ function HomePage() {
         .catch((error) => {
             console.log(error)
         })
-    }, [])
+    }, [discipline, search])
 
     if(allBike === null) {
         return <Spinner animation="grow" variant="info" />
@@ -52,6 +53,13 @@ function HomePage() {
       </Form.Select>
 
       {allBike
+      .filter((eachBike) => {
+        if(search === null) {
+          return true
+        }else {
+          return eachBike.name.toLowerCase().includes(search.toLowerCase()) 
+        }
+        })
       .filter((eachBikeDis) => {
         if (discipline === null) {
           return true
@@ -63,6 +71,7 @@ function HomePage() {
       .map((eachBike) => {
         return (<CardBikes key={eachBike.id} eachBike={eachBike} />)
       })}
+      
     </div>
   );
 }

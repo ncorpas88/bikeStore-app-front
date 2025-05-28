@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Modal from 'react-bootstrap/Modal';
+import Spinner from 'react-bootstrap/Spinner';
 
 function DetailsBikePage() {
   
@@ -33,7 +34,7 @@ function DetailsBikePage() {
   };
 
   if (details === null) {
-    return <h3>...buscando detalles</h3>;
+    return <Spinner animation="grow" variant="info" />;
   }
 
   const deleteBike = () => {

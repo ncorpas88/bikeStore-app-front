@@ -3,6 +3,7 @@ import CardBikes from "../Components/CardBikes";
 import axios from "axios"
 import { useSearchParams } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
+import Spinner from 'react-bootstrap/Spinner';
 
 
 function HomePage() {
@@ -34,7 +35,8 @@ function HomePage() {
     }, [])
 
     if(allBike === null) {
-        return <h3>...buscando Bicicletas</h3>
+        return <Spinner animation="grow" variant="info" />
+        
     }
 
   return (

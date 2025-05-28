@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Spinner from 'react-bootstrap/Spinner';
+
 
 function CompanyDetailsPage() {
   const [allCompanies, setAllCompanies] = useState(null);
@@ -16,7 +18,7 @@ function CompanyDetailsPage() {
   }, []);
 
   if (allCompanies === null) {
-    return <h3>...buscando companies</h3>;
+    return <Spinner animation="grow" variant="info" />;
   }
 
   return (

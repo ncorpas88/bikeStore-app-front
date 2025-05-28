@@ -43,7 +43,7 @@
 }
 
 .bg-body-tertiary img {
-  width: 120px;
+  width: 200px;
 }
 
 .HomePage {
@@ -119,4 +119,13 @@
 
 .CardBikes {
   border-radius: 20px;
+}
+
+
+@media (max-width: 705px){
+  .bg-body-tertiary {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 }

@@ -53,7 +53,7 @@ function MyNavbar() {
             />
           </Col>
           <Col xs="auto">
-            <Button onClick={handleSearch} type="button">Search</Button>
+            <Button onClick={handleSearch} variant="success" type="button">Search</Button>
           </Col>
         </Row>
       </Form>

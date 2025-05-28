@@ -86,6 +86,10 @@
   gap: 5rem;
 }
 
+.companydetails img {
+  margin-bottom: 2rem;
+}
+
 
 .DetailsBike img{
   border-radius: 20px;

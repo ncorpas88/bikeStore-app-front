@@ -141,6 +141,7 @@
   .bg-body-tertiary {
     display: flex;
     justify-content: center;
+    
 
   }
 
@@ -169,6 +170,11 @@
 
 .About img {
   width: 300px;
+}
+
+.toggleBtn .navbar-toggler-icon{
+  width: 12px;
+  height: 12px;
 }
 
 }

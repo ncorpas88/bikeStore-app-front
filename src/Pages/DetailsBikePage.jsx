@@ -32,10 +32,12 @@ function DetailsBikePage() {
   };
 
   if (details === null) {
-    <div className="d-flex justify-content-center aling-items-center vh-100">
-      return <Spinner animation="grow" variant="dark" />;
-      <p>Loanding bike details...</p>
-    </div>;
+    return (
+      <div className="d-flex justify-content-center aling-items-center vh-100">
+        <Spinner animation="grow" variant="dark" />;
+        <p>Loanding bike details...</p>
+      </div>
+    )
   }
 
   const deleteBike = () => {

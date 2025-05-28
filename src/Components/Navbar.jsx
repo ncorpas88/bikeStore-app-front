@@ -26,9 +26,9 @@ function MyNavbar() {
         <span>B</span>orn <span>T</span>o <span>R</span>ide, <span>B</span>uilt <span>T</span>o <span>L</span>ast
       </h1>
 
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggleBtn" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
+        <Nav className="me-auto gap-0" >
           <Nav.Link as={Link} to="/">
             <Button variant="secondary">Home</Button>
           </Nav.Link>

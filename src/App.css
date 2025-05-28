@@ -10,8 +10,8 @@
 }
 
 .bg-body-tertiary {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255);
   padding: 5px 20px;
   box-shadow: 0px 1px 2px gray;
   width: 100%;
@@ -44,22 +44,6 @@
 
 .bg-body-tertiary img {
   width: 120px;
-}
-
-.Sidebar {
-  background-color: rgb(66, 133, 127);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10rem;
-  padding-top: 2cqb;
-  margin-bottom: 20px;
-  
-}
-
-.Sidebar img {
-  margin: 10px;
 }
 
 .HomePage {

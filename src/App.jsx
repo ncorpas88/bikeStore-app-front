@@ -1,8 +1,6 @@
 import {Routes, Route} from "react-router-dom"
 import './App.css'
 import HomePage from "./Pages/HomePage"
-import Navbar from "./Components/Navbar"
-import Sidebar from "./Components/Sidebar"
 import AboutPage from "./Pages/AboutPage"
 import Footer from "./Components/Footer"
 import CompanyDetailsPage from "./Pages/CompanyDetailsPage"
@@ -10,13 +8,14 @@ import FormCreateBikePage from "./Pages/FormCreateBikePage"
 import DetailsBikePage from "./Pages/DetailsBikePage"
 import FormModifyPage from "./Pages/FormModifyPage"
 import ErrorPage from "./Pages/ErrorPage"
+import MyNavbar from "./Components/Navbar"
 
 function App() {
   
 
   return (
     <>
-    <Navbar />
+    <MyNavbar />
      <Routes>
       <Route path="/" element={<HomePage/>} />
       <Route path="/companyDetailsPage" element={<CompanyDetailsPage />} />

@@ -6,12 +6,12 @@ function AboutPage() {
     <div className="About">
       <h1>About</h1>
       <Link to="https://github.com/ncorpas88/bikeStore-app-front" >
-        <img src="src/images/git.png" alt="logo-github" width={200}/>
+        <img src="images/git.png" alt="logo-github" width={200}/>
       </Link>
       <Link to="www.linkedin.com/in/ncorpas" >
-        <img src="src/images/logolink.png" alt="logo-linkedin" width={200}/>
+        <img src="images/logolink.png" alt="logo-linkedin" width={200}/>
       </Link>
-      <img src="src/images/map.png" alt="map" width={600}/>
+      <img src="images/map.png" alt="map" width={600}/>
     </div>
   );
 }

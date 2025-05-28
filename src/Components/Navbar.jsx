@@ -8,7 +8,7 @@ function MyNavbar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <NavbarBrand as={Link} to="/">
-        <img src="src/images/logobikestore.png" alt="logistores" />
+        <img src="images/logobikestore.png" alt="logistores" />
       </NavbarBrand>
       <h1>
         <span>B</span>orn <span>T</span>o <span>R</span>ide, <span>B</span>uilt{" "}

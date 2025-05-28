@@ -126,6 +126,28 @@
   .bg-body-tertiary {
     display: flex;
     justify-content: center;
-    align-content: center;
+
   }
+
+  .bg-body-tertiary img {
+    width: 120px;
+  }
+
+  .bg-body-tertiary h1 {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+  }
+
+ .custome-navbar {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  height: auto;
+ }
+
+
+.About img {
+  width: 300px;
+}
+
 }

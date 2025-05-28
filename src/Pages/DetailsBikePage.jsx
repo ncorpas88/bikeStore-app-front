@@ -65,7 +65,7 @@ function DetailsBikePage() {
       <hr />
       <div className="companydetails">
         <h2>Company: {details.company?.name}</h2>
-        <h2>{details.company?.country}</h2>
+        <h2>Country: {details.company?.country}</h2>
         <h2>Since: {details.company?.founded}</h2>
         <h2>Web Site: {details.company?.website}</h2>
         <img

@@ -160,6 +160,12 @@
   height: auto;
  }
 
+ .About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
 
 .About img {
   width: 300px;

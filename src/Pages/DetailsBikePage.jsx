@@ -2,11 +2,10 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Button from "react-bootstrap/Button";
-import Modal from 'react-bootstrap/Modal';
-import Spinner from 'react-bootstrap/Spinner';
+import Modal from "react-bootstrap/Modal";
+import Spinner from "react-bootstrap/Spinner";
 
 function DetailsBikePage() {
-  
   const params = useParams();
   const [details, setDetails] = useState(null);
   const navigate = useNavigate();
@@ -14,7 +13,6 @@ function DetailsBikePage() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  
 
   useEffect(() => {
     getData();
@@ -34,7 +32,10 @@ function DetailsBikePage() {
   };
 
   if (details === null) {
-    return <Spinner animation="grow" variant="info" />;
+    <div className="d-flex justify-content-center aling-items-center vh-100">
+      return <Spinner animation="grow" variant="dark" />;
+      <p>Loanding bike details...</p>
+    </div>;
   }
 
   const deleteBike = () => {
@@ -94,7 +95,6 @@ function DetailsBikePage() {
           </Button>
         </Modal.Footer>
       </Modal>
-
     </div>
   );
 }

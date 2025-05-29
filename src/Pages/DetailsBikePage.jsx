@@ -60,7 +60,7 @@ function DetailsBikePage() {
         <h2>Discipline: {details.discipline}</h2>
         <h2>Frame Material :{details.frame_material}</h2>
         <h2>Color :{details.color}</h2>
-        <h2>Peso sin pedales: {details.weight_kg}</h2>
+        <h2>Weight without pedals: {details.weight_kg}</h2>
       </div>
       <hr />
       <div className="companydetails">

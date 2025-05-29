@@ -5,6 +5,7 @@ function AboutPage() {
   return (
     <div className="About">
       <h1>About Me</h1>
+      <img src="/images/yo.webp" alt="me" width={200} />
       <h2>Developer: Natanael Corpas Rivero</h2>
       <p>I developed this website to manage the storage of bicycles for 
         a bike shop. It was created as project for the Ironhack bootcamp.

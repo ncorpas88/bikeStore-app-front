@@ -3,7 +3,8 @@
 function ErrorPage() {
   return (
     <div>
-      <h1>Error Page</h1>
+    
+      <img src="/images/bikeerror.png" alt="error" />
     </div>
   );
 }

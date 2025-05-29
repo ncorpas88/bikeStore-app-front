@@ -15,7 +15,7 @@ function AboutPage() {
       <Link to="https://github.com/ncorpas88/bikeStore-app-front" >
         <img src="images/git.png" alt="logo-github" width={200}/>
       </Link>
-      <Link to="www.linkedin.com/in/ncorpas" >
+      <Link to="https://www.linkedin.com/in/ncorpas" >
         <img src="images/logolink.png" alt="logo-linkedin" width={200}/>
       </Link>
       <img src="images/map.png" alt="map" width={400}/>

@@ -146,13 +146,14 @@
   }
 
   .bg-body-tertiary img {
-    width: 120px;
+    width: 100px;
   }
 
   .bg-body-tertiary h1 {
     display: flex;
     justify-content: center;
     font-size: large;
+    padding-top: 18px;
   }
 
  .custome-navbar {
@@ -175,6 +176,15 @@
 .toggleBtn .navbar-toggler-icon{
   width: 12px;
   height: 12px;
+}
+
+.bg-body-tertiary button {
+  margin-top: 0px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
 }
 
 }

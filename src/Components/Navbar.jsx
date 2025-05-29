@@ -44,7 +44,7 @@ function MyNavbar() {
         </Nav>
          <Form className="d-flex align-items-center ms-auto">
         <Row className="align-items-center g-2">
-          <Col xs="auto">
+          <Col xs={7}>
             <Form.Control
               type="text"
               placeholder="Search"

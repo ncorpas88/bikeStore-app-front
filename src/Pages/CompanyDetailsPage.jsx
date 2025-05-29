@@ -18,7 +18,13 @@ function CompanyDetailsPage() {
   }, []);
 
   if (allCompanies === null) {
-    return <Spinner animation="grow" variant="info" />;
+    return (
+      <div className="d-flex justify-content-center aling-items-center vh-100">
+        <Spinner animation="grow" variant="dark" />;
+        <br />
+        <p>Loanding Companies...</p>
+      </div>
+    )
   }
 
   return (

@@ -42,8 +42,8 @@ function MyNavbar() {
         <Button variant="dark">About</Button>
       </Nav.Link>
         </Nav>
-         <Form className="d-flex aling-items-center">
-        <Row className="aling-items-center">
+         <Form className="d-flex align-items-center ms-auto">
+        <Row className="align-items-center g-2">
           <Col xs="auto">
             <Form.Control
               type="text"

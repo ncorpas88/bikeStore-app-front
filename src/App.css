@@ -102,12 +102,26 @@
   margin-bottom: 20px;
 }
 
+.DetailsBike h1 {
+  background-color: rgb(66, 133, 127);
+  border-radius: 20px;
+  color: aliceblue;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 20px;
+}
+
 
 .companydetails {
-   display:flex;
+  background-color: rgb(66, 133, 127);
+  border-radius: 30px;
+  margin: 40px;
+  padding: 20px;
+  padding-top: 40px;
+  display:flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 .CreateBike button{
@@ -136,6 +150,15 @@
   height: 250px;
   object-fit: cover;
 }
+
+.bikedetails span{
+  color: rgb(0, 0, 250);
+}
+
+.companydetails span {
+  color: rgb(0, 0, 250);
+}
+
 
 @media (max-width: 705px){
   .bg-body-tertiary {

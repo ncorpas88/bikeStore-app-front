@@ -58,17 +58,17 @@ function DetailsBikePage() {
       <h2>Model: {details.name}</h2>
       <img src={details.image} alt="image-Bike" />
       <div className="bikedetails">
-        <h2>Discipline: {details.discipline}</h2>
-        <h2>Frame Material :{details.frame_material}</h2>
-        <h2>Color :{details.color}</h2>
-        <h2>Weight without pedals: {details.weight_kg}</h2>
+        <h2>Discipline: <span>{details.discipline}</span></h2>
+        <h2>Frame Material: <span>{details.frame_material}</span></h2>
+        <h2>Color: <span>{details.color}</span></h2>
+        <h2>Weight without pedals: <span>{details.weight_kg}</span></h2>
       </div>
       <hr />
       <div className="companydetails">
-        <h2>Company: {details.company?.name}</h2>
-        <h2>Country: {details.company?.country}</h2>
-        <h2>Since: {details.company?.founded}</h2>
-        <h2>Web Site: {details.company?.website}</h2>
+        <h2>Company: <span>{details.company?.name}</span></h2>
+        <h2>Country: <span>{details.company?.country}</span></h2>
+        <h2>Since: <span>{details.company?.founded}</span></h2>
+        <h2>Web Site: <span>{details.company?.website}</span></h2>
         <img
           src={details.company?.image}
           alt="logoCompany"

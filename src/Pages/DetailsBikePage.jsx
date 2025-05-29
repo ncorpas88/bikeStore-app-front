@@ -36,7 +36,7 @@ function DetailsBikePage() {
       <div className="d-flex justify-content-center aling-items-center vh-100">
         <Spinner animation="grow" variant="dark" />;
         <br />
-        <p>Loanding bike details...</p>
+        <p>Loading bike details...</p>
       </div>
     )
   }

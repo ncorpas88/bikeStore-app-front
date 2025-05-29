@@ -22,7 +22,7 @@ function CompanyDetailsPage() {
       <div className="d-flex justify-content-center aling-items-center vh-100">
         <Spinner animation="grow" variant="dark" />;
         <br />
-        <p>Loanding Companies...</p>
+        <p>Loading Companies...</p>
       </div>
     )
   }

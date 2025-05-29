@@ -7,8 +7,9 @@ function AboutPage() {
       <h1>About Me</h1>
       <img src="/images/yo.webp" alt="me" width={200} />
       <h2>Developer: Natanael Corpas Rivero</h2>
-      <p>I developed this website to manage the storage of bicycles for 
-        a bike shop. It was created as project for the Ironhack bootcamp.
+      <p>I developed this website to enhance and optimize bicycle storage management for a specialized bike shop.
+         The project was carried out as part of the Ironhack Bootcamp, integrating practical solutions with a modern, 
+         intuitive design focused on delivering an exceptional user experience.
       </p>
 
       <Link to="https://github.com/ncorpas88/bikeStore-app-front" >
@@ -17,7 +18,7 @@ function AboutPage() {
       <Link to="www.linkedin.com/in/ncorpas" >
         <img src="images/logolink.png" alt="logo-linkedin" width={200}/>
       </Link>
-      <img src="images/map.png" alt="map" width={600}/>
+      <img src="images/map.png" alt="map" width={400}/>
     </div>
   );
 }

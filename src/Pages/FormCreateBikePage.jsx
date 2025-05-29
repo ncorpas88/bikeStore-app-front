@@ -118,7 +118,8 @@ function FormCreateBikePage() {
             onChange={(e) => setCompanyId(e.target.value)}
           />
           <Form.Text className="text-muted">
-            Trek Id: 1234, Orbea Id: 5678, Focus Id: 9101
+            Trek Id: 1234, Orbea Id: 5678, Focus Id: 9101,
+            Specialized Id: 5855, Megamo Id: 4121, Scott Id: 4182.
           </Form.Text>
         </Form.Group>
 

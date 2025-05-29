@@ -23,7 +23,8 @@ function MyNavbar() {
         <img src="images/logobikestore.png" alt="logistores" />
       </NavbarBrand>
       <h1>
-        <span>B</span>orn <span>T</span>o <span>R</span>ide, <span>B</span>uilt <span>T</span>o <span>L</span>ast
+        <span>B</span>orn  <span>T</span>o  <span>R</span>ide 
+        <br />  <span>B</span>uilt  <span>T</span>o  <span>L</span>ast
       </h1>
 
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggleBtn" />

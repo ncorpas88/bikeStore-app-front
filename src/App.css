@@ -150,9 +150,7 @@
   }
 
   .bg-body-tertiary h1 {
-    display: flex;
-    justify-content: center;
-    font-size: large;
+    font-size:larger;
     padding-top: 18px;
   }
 
@@ -182,9 +180,6 @@
   margin-top: 0px;
 }
 
-.search {
-  display: flex;
-  flex-direction: row;
-}
+
 
 }

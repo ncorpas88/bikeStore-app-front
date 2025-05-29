@@ -12,12 +12,12 @@ function AboutPage() {
          intuitive design focused on delivering an exceptional user experience.
       </p>
 
-      <Link to="https://github.com/ncorpas88/bikeStore-app-front" >
+      <a href="https://github.com/ncorpas88/bikeStore-app-front" target="_blank" >
         <img src="images/git.png" alt="logo-github" width={200}/>
-      </Link>
-      <Link to="https://www.linkedin.com/in/ncorpas" >
+      </a>
+      <a href="https://www.linkedin.com/in/ncorpas" target="_blank">
         <img src="images/logolink.png" alt="logo-linkedin" width={200}/>
-      </Link>
+      </a>
       <img src="images/map.png" alt="map" width={400}/>
     </div>
   );

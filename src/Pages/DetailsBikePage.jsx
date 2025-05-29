@@ -68,7 +68,9 @@ function DetailsBikePage() {
         <h2>Company: <span>{details.company?.name}</span></h2>
         <h2>Country: <span>{details.company?.country}</span></h2>
         <h2>Since: <span>{details.company?.founded}</span></h2>
+        <a href={details.company?.website} target="_blank">
         <h2>Web Site: <span>{details.company?.website}</span></h2>
+        </a>
         <img
           src={details.company?.image}
           alt="logoCompany"

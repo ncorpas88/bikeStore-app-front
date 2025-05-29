@@ -204,6 +204,9 @@
   margin-top: 0px;
 }
 
-
+.error img {
+  width: 300px;
+  height: 320px;
+}
 
 }

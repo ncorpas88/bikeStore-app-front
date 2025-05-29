@@ -2,9 +2,12 @@
 
 function ErrorPage() {
   return (
-    <div>
-    
-      <img src="/images/bikeerror.png" alt="error" />
+    <div className="error">
+      <h1>Error Page</h1>
+      <br />
+      <br />
+      <br />
+      <img src="/images/bikeerror.png" alt="error" width={600}/>
     </div>
   );
 }

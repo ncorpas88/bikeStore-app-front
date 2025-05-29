@@ -38,7 +38,7 @@ function HomePage() {
     if(allBike === null) {
         return (
       <div className="d-flex justify-content-center aling-items-center vh-100">
-        <Spinner animation="grow" variant="dark" />;
+        <Spinner animation="grow" variant="dark" />
         <br />
         <p>Loading bike...</p>
       </div>

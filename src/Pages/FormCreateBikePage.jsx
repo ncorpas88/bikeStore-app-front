@@ -48,6 +48,7 @@ function FormCreateBikePage() {
             type="text"
             name="name"
             value={name}
+            required
             onChange={(e) => setName(e.target.value)}
           />
         </Form.Group>
@@ -58,6 +59,7 @@ function FormCreateBikePage() {
             type="text"
             name="discipline"
             value={discipline}
+            required
             onChange={(e) => setDiscipline(e.target.value)}
           />
         </Form.Group>
@@ -68,6 +70,7 @@ function FormCreateBikePage() {
             type="text"
             name="frame-material"
             value={frame_material}
+            required
             onChange={(e) => setFrame_material(e.target.value)}
           />
         </Form.Group>
@@ -78,6 +81,7 @@ function FormCreateBikePage() {
             type="text"
             name="color"
             value={color}
+            required
             onChange={(e) => setColor(e.target.value)}
           />
         </Form.Group>
@@ -88,6 +92,7 @@ function FormCreateBikePage() {
             type="text"
             name="weight_kg"
             value={weight_kg}
+            required
             onChange={(e) => setWeight_kg(e.target.value)}
           />
         </Form.Group>
@@ -98,6 +103,7 @@ function FormCreateBikePage() {
             type="text"
             name="image url"
             value={image}
+            required
             onChange={(e) => setImage(e.target.value)}
           />
         </Form.Group>
@@ -108,6 +114,7 @@ function FormCreateBikePage() {
             type="text"
             name="companyId"
             value={companyId}
+            required
             onChange={(e) => setCompanyId(e.target.value)}
           />
           <Form.Text className="text-muted">

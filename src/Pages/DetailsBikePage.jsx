@@ -28,6 +28,7 @@ function DetailsBikePage() {
       setDetails(response.data);
     } catch (error) {
       console.log(error);
+      navigate("*");
     }
   };
 

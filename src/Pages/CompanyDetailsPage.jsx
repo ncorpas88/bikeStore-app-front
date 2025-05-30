@@ -2,9 +2,12 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Spinner from "react-bootstrap/Spinner";
 import Card from "react-bootstrap/Card";
+import { useNavigate } from "react-router-dom";
 
 function CompanyDetailsPage() {
   const [allCompanies, setAllCompanies] = useState(null);
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     axios
@@ -14,6 +17,7 @@ function CompanyDetailsPage() {
       })
       .catch((error) => {
         console.log(error);
+        navigate("*");
       });
   }, []);
 

@@ -34,6 +34,7 @@ function FormCreateBikePage() {
       })
       .catch((error) => {
         console.log(error);
+        navigate("*");
       });
   };
 

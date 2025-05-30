@@ -41,6 +41,7 @@ function FormModifyPage() {
       })
       .catch((error) => {
         console.log(error);
+        navigate("*");
       });
   };
 

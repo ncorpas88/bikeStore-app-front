@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import CardBikes from "../Components/CardBikes";
 import axios from "axios"
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
 import Spinner from 'react-bootstrap/Spinner';
 
@@ -9,6 +9,8 @@ import Spinner from 'react-bootstrap/Spinner';
 function HomePage() {
 
     const [allBike, setAllBike] = useState(null)
+
+    const navigate = useNavigate()
 
     const [searchParams, setSearchParams] = useSearchParams()
     const discipline = searchParams.get("discipline")
@@ -32,6 +34,7 @@ function HomePage() {
         })
         .catch((error) => {
             console.log(error)
+            navigate("*");
         })
     }, [discipline, search])
 
